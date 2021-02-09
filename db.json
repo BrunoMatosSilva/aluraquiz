@@ -1,6 +1,6 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-    "title": "Quiz CSS da Alura",
+    "bg": "https://img.wallpapersafari.com/desktop/1920/1080/68/22/Q4lmBN.jpg",
+    "title": "Quiz NBA 2020",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
@@ -31,8 +31,8 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#4CAF50",
-        "secondary": "#29b6f6",
+        "primary": "#1E90FF",
+        "secondary": "#FF0000",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
