@@ -134,10 +134,13 @@ export default function QuizPage() {
             onSubmit={handleSubmitQuiz}
           />
         )}
-
+        <Widget>
+        <Widget.Header>
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
+        </Widget.Header>
+        </Widget>
       </QuizContainer>
     </QuizBackground>
   );
