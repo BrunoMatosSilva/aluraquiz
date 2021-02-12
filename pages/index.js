@@ -3,11 +3,12 @@ import db from '../db.json';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 
 
 const Title = styled.h1`
@@ -42,14 +43,12 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function(infoDoEvento) {
+            <form onSubmit={(infoDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma submissão por meio do react');
             }}>
-            <input 
-              onChange={function (infosDoEvento) {
-              console.log(infosDoEvento.target.value);
+            <Input 
+              onChange={(infosDoEvento) => {
               setName(infosDoEvento.target.value);
             }}
             placeholder="Digite seu nome!" />
