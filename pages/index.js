@@ -9,6 +9,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 
 const Title = styled.h1`
@@ -43,18 +44,22 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onSubmit={(infoDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}>
             <Input 
+              name="nomeDoUsuario"
               onChange={(infosDoEvento) => {
               setName(infosDoEvento.target.value);
             }}
-            placeholder="Digite seu nome!" />
-            <button type="submit" disabled={name.length === 0}>
-              Jogar {name}
-            </button>
+            placeholder="Digite seu nome!"
+            value={name} 
+            />
+            <Button type="submit" disabled={name.length === 0}>
+              {`Jogar ${name}`}
+            </Button>
             </form>
           </Widget.Content>
         </Widget>
