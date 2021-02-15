@@ -4,25 +4,63 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/fa1ExQ0Qch0yc/giphy.gif",
+        "title": "Quais os dois times que fizeram o jogo da final 2020 na bolha?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Bucks x Clippers",
+          "Lakers x Miami",
+          "Jazz x Celtics",
+          "Cavaliers x Warriors"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/l0OWiMGpoC6apZFXG/giphy.gif",
+        "title": "Quais foram os ultimos colocados da NBA do Lest e Oeste em 2020?",
+        "description": "Tudo foi planejado",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Cavaliers e Warriors",
+           "Lakers e Miami",
+           "Pistons e Pelicans",
+           "Celtics e Suns"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3oKIPkYaXWNQftk3cY/giphy.gif",
+        "title": "Quais são as equipes com mais titulos da NBA?",
+        "description": "E muito tempo",
+        "answer": 3,
+        "alternatives": [
+           "Hornets e Nets",
+           "Lakers e Miami",
+           "Clippers e Raptors",
+           "Lakers e Celtics"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l3q2JCu9lep6dAmyY/giphy.gif",
+        "title": "Quem é o jogador com mais titulos pela NBA?",
+        "description": "Marco a historia",
+        "answer": 2,
+        "alternatives": [
+           "Lebron James",
+           "Michael Jordan",
+           "Bill Russell",
+           "Abdul Jabbar"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/QA7C1yuI0QZtBbxxM4/giphy.gif",
+        "title": "Quem foi o MVP da final do NBA 2020?",
+        "description": "Faz sentido com a primeira questão",
+        "answer": 0,
+        "alternatives": [
+           "Lebron James",
+           "Giannis Antetokounmpo",
+           "Jayson Tatum",
+           "Jimmy Butler"
         ]
       }
     ],
