@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import db from '../../db.json';
 import Widget from '../../src/components/Widget';
 import QuizLogo from '../../src/components/QuizLogo';
@@ -6,11 +7,22 @@ import QuizBackground from '../../src/components/QuizBackground';
 import QuizContainer from '../../src/components/QuizContainer';
 import AlternativesForm from '../../src/components/AlternativesForm';
 import Button from '../../src/components/Button';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
-    <Widget>
+    <Widget 
+    as={motion.section}
+        transition={{delay: 0, duration: 0.8 }}
+        variants={{
+          show: { opacity: 1, x: '0' },
+          hidden: { opacity: 0, x: '-100%' },
+        }}
+        initial="hidden"
+        animate="show"
+        >
       <Widget.Header>
+      <BackLinkArrow href="/" />
         Tela de Resultado:
       </Widget.Header>
 
@@ -31,7 +43,7 @@ function ResultWidget({ results }) {
           {results.map((result, index) => (
             <li key={`result__${result}`}>
               #{index + 1 } {' '} Resultado: 
-              {result === true ? 'Acertou' : 'Errou'}
+              {result === true ? ' Acertou' : ' Errou'}
             </li>
           ))}
         </ul>
@@ -70,9 +82,18 @@ function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget>
+    <Widget 
+        as={motion.section}
+        transition={{delay: 0, duration: 0.8 }}
+        variants={{
+          show: { opacity: 1, x: '0' },
+          hidden: { opacity: 0, x: '-100%' },
+        }}
+        initial="hidden"
+        animate="show"
+    >
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
